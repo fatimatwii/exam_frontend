@@ -6,7 +6,7 @@ document.getElementById('addItem').addEventListener('click', function () {
     addItemToGeneralList();
 });
 
-function addSpecificItemToList() {
+function addSpecificItemToList() {  
     var itemInput = document.getElementById('itemInput').value.trim();
     var itemType = document.querySelector('input[name="itemType"]:checked');
 

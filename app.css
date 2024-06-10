@@ -33,9 +33,11 @@ body {
 }
 h3 {
     color: #f1f1f1;
-    text-shadow: 14px 14px 18px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 8px #ffd700;
 }
-
+h3:hover{
+    transform: scale(1.05);
+}
 .List {
     background-color: chartreuse;
     border-radius: 10px;
@@ -49,7 +51,7 @@ h3 {
 }
 
 .item:hover {
-    transform: scale(1.05);
+    transform: scale(1.05);text-shadow: 2px 2px 8px #ffd700;
 }
 
 
