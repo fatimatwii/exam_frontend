@@ -1,0 +1,58 @@
+body {
+    background-color: #0dfdf1;
+    color: white;
+}
+
+.container {
+
+    border-radius: 8px;
+}
+.addItem {
+    background-color: rgb(50, 188, 252);
+    padding: 10px;
+    padding-top: 13px;
+    border-radius: 8px;
+    height: fit-content;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.addItem:hover {
+    transform: scale(1.05);
+}
+
+.searchDelete {
+    margin-top: 3%;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.searchDelete:hover {
+    transform: scale(1.05);
+}
+h3 {
+    color: #f1f1f1;
+    text-shadow: 14px 14px 18px rgba(0, 0, 0, 0.2);
+}
+
+.List {
+    background-color: chartreuse;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.item {
+    margin: 3%;
+    font-weight: bolder;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+
+.highlighted {
+    background-color: red;
+}

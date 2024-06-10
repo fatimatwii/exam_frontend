@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="addItem row mb-3">
+            <div class="col-sm-12 col-md-3 mb-2 mb-md-0">
+                <input type="text" id="itemInput" class="form-control" placeholder="Fruits or Legumes">
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3 mb-md-0">
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <input type="radio" id="fruit" name="itemType" value="fruits">
+                        <label for="fruits">Fruits</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="radio" id="legume" name="itemType" value="legumes">
+                        <label for="legumes">Legumes</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <button type="button" id="addSpecificItem" class="btn btn-primary w-100">Add to Specific List</button>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <button type="button" id="addItem" class="btn btn-danger w-100">Add to General List</button>
+            </div>
+        </div>
+        <div class="searchDelete">
+            <form id="searchDeleteForm">
+                <div class="row mb-3">
+                    <div class="col-sm-6 col-md-3">
+                        <button type="button" id="searchItem" class="btn btn-info w-100">Search for item</button>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <button type="button" id="deleteItem" class="btn btn-danger w-100">Delete an item</button>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <input type="text" id="searchInput" class="form-control w-100" placeholder="Search for item">
+                    </div>
+                </div>
+            </form>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <h3 class="text-center">List of Fruits</h3>
+                    <div class="List">
+                        <ul id="fruitsList" class="list-group">
+                            <div class="alert alert-info item" role="alert"> Fruits! - Apple</div>
+                            <div class="alert alert-info item" role="alert"> Fruits! - Mangoes</div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <h3 class="text-center">List of Fruits & Legumes</h3>
+                    <div class="List">
+                        <ul id="fruitsLegumesList" class="list-group">
+                            <div class="alert alert-primary item" role="alert"> Fruits! - Pineapples</div>
+                            <div class="alert alert-primary item" role="alert"> Fruits! - Bananas</div>
+                            <div class="alert alert-primary item" role="alert"> Legumes! - Potato</div>
+                            <div class="alert alert-primary item" role="alert"> Legumes! - Lentils</div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <h3 class="text-center">List of Legumes</h3>
+                    <div class="List">
+                        <ul id="legumesList" class="list-group">
+                            <div class="alert alert-warning item" role="alert"> Legumes! - Broccoli</div>
+                            <div class="alert alert-warning item" role="alert"> Legumes! - Green Beans</div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
